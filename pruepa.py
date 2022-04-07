@@ -1,13 +1,17 @@
-from multiprocessing import parent_process
-from shutil import ExecError
-import sys
+import yfinance as yf
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
-from circulo import circulo
 
-cir  = circulo(radio=10, color="Red")
+tesla = yf.Ticker("TSLA")
 
-print(cir.radio)
+tesla_data = tesla.info
 
-cir.agrandarRadio(2)
+tesla_data = tesla.history(period='max')
 
-print(cir.radio)
+tesla_data.reset_index(inplace=True)
+
+tesla_data.head()
