@@ -29,7 +29,7 @@ yhat = lm.predict(np.arange(1, 201, 1).reshape(-1, 1))
 
 print(yhat)
 
-grafico = sns.regplot(x="highwat-mpg", y="price", data=df)
+grafico = sns.regplot(x="highway-mpg", y="price", data=df)
 plt.ylim(0,)
 
 

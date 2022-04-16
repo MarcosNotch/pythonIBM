@@ -35,7 +35,7 @@ print("Imprimiendo ordenada: ", lm1.intercept_)
 
 ## PARA COMPARAR MODELOS DE DISTINTOS TIPOS
 
-# EL MODELO CON R2 MAS ALTO ES MEJOR 
+# EL MODELO CON R2 MAS ALTO ES MEJOR - mientras mas cerca de 1 mejor
 # EL MODELO CON MSE MAS BAJO ES MEJOR
 
 # Sirve para saber que tan precioso es nuestro modelo valores cercanos a 1 y -1 son buenos
